@@ -1,0 +1,653 @@
+<!doctype html>
+<html>
+
+
+<head>
+        <meta charset="utf-8">
+        <title>Kate Kinkade</title>
+        <link href="ver2.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:700" rel="stylesheet">
+    
+    
+    
+    
+            <!--
+
+If your brother's flipping out, I'm like a Sam Kinison stand-up bit, okay, Shelley Duvall at the Overlook Hotel. I'm at "hot mic'd Christian Bale" levels of intensity and hysteria, so please, don't talk to me about flipping out.
+
+-->
+    
+    
+
+<style>
+    
+ .imageBox {
+  position: relative;
+  float: left;
+}
+   .imageBox .hoverImg img {width: 70px;
+    height: 54px;}
+
+
+.imageBox .hoverImg {
+  position: absolute;
+  left: 113px;
+  top: 30px;
+  display: none;
+
+}
+
+.imageBox:hover .hoverImg {
+  display: block;
+
+}
+
+    
+    
+   .imageBox1 {
+  position: relative;
+  float: left;
+}
+   .imageBox1 .hoverImg img {width: 120px;
+    height: 60px;}
+
+
+.imageBox1 .hoverImg {
+  position: absolute;
+  left: 138px;
+  top: 100px;
+  display: none;
+
+}
+
+.imageBox1:hover .hoverImg {
+  display: block;
+
+}
+    
+
+ 
+    
+            
+   .blogbox {
+  position: relative;
+  float: left;}
+    
+   .blogbox .hoverImg img {width: 100px;
+    height: 53px;}
+
+
+.blogbox .hoverImg {
+  position: absolute;
+  left: -90px;
+  top: 60px;
+  display: none;}
+
+.blogbox:hover .hoverImg {
+  display: block;
+
+}
+    
+    
+   .resumebox {
+  position: relative;
+  float: left;}
+    
+   .resumebox .hoverImg img {width: 140px;
+    height: 43px;}
+
+
+.resumebox .hoverImg {
+  position: absolute;
+  left: 20px;
+  top: 185px;
+  display: none;}
+
+.resumebox:hover .hoverImg {
+  display: block;
+
+}
+    
+    
+    
+          
+   .videobox {
+  position: relative;
+  float: left;}
+   .videobox .hoverImg img {width: 110px;
+    height: 35px;}
+
+
+.videobox .hoverImg {
+  position: absolute;
+  left: 258px;
+  top: 105px;
+  display: none;}
+
+.videobox:hover .hoverImg {
+  display: block;
+
+}
+    
+    
+    
+       .artbox {
+  position: relative;
+  float: left;}
+    
+   .artbox .hoverImg img {width: 80px;
+    height: 40px;}
+
+
+.artbox .hoverImg {
+  position: absolute;
+  left: -70px;
+  top: 90px;
+  display: none;}
+
+.artbox:hover .hoverImg {
+  display: block;
+
+}
+    
+    
+    
+    
+    
+body {background-color:#FAFAFA;}
+.main {
+    font-family: 'Varela Round', sans-serif;
+    font-size:11px;
+    }
+
+    /* begin: navbar css ----  */
+
+.header {padding-top:20px;
+    padding-left:30px;
+    padding-bottom:20px;}
+.title {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    width: auto;
+    }
+
+.spanunderline {text-decoration: underline;}
+
+.navbar {padding-top:10px;
+    font-size:11px;}
+.navbar a {text-decoration: none;
+        color:black;
+        margin-left:none;
+        margin-right:20px;}
+.navbar a:hover {color:lightcoral;}
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.navbar li {
+    display: inline;
+}
+
+#contact {display:none; 
+        padding-top:15px;
+        padding-bottom:2px;
+        border-bottom: thin solid #ECECEC;
+        width: 800px;}
+#contact img {width:22px; height:16px;}
+
+#socials {display:none; 
+         padding-top:5px;
+        padding-bottom:0px;
+        border-bottom: thin solid #ECECEC;
+        width: 800px;}
+
+.hide {
+  position:absolute;
+  left:-9999px
+}
+
+    /* ---- end: navbar css */
+    
+    /* begin: homepage css ---- */
+
+.boxcontainer  {
+    width:580px;
+    margin-left: 90px;
+    -webkit-transform: rotate(0);
+}
+
+.boxcontainer img {height:186px;
+    opacity: 0.5;
+    transition: opacity .5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+    -webkit-transition: opacity .5s ease-out;
+    -o-transition: opacity .5s ease-out;
+    -webkit-backface-visibility: hidden;
+}
+
+.boxcontainer img:hover {opacity: 1.0;}
+
+.row1  {
+    display:grid;
+    grid-template-columns:41% 38%; 
+     justify-content: end;
+}
+
+.textbox1  {background-color:#ECECEC;
+    width:180px;
+    height:160px;
+    padding-right:25px;
+    padding-top: 10px;
+    padding-bottom:20px;
+    padding-left:25px;}
+
+.textbox2  {background-color:#ECECEC;
+    width:180px;
+    height:170px;
+    padding-right:25px;
+    padding-top: 10px;
+    padding-bottom:10px;
+    padding-left:15px;}
+
+.textbox2 p {color:black;}
+.textbox2 p:hover {color:lightcoral;}
+
+.textimg img {opacity:.5;
+        width:220px;
+        height:190px;
+        }
+
+.row2  {
+     padding-top:5px;
+     display:grid;
+    grid-template-columns:26% 20% 40%;
+   }
+
+.design img {width: 260px;}
+
+.shirts img {width: 260px;}
+
+.face img {opacity:.7;
+    width: 220px;
+    height: 190px}
+
+ .row3 {
+     padding-top:5px;
+    display:grid;
+    grid-template-columns:6.5% 20% 28.5% 20% 20%;}
+
+.art {}
+
+.video {}
+
+.photo {}
+
+    /* ----  end: homepage css */
+
+    /* begin: footer css ----  */
+
+.copyright  {font-family: 'Varela Round', sans-serif;
+    font-size: 14px;
+    float:right;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    padding:5px;
+    font-size: 10px;
+    margin-bottom:40px;
+   }
+
+.footer {padding-right:5px;
+        margin-top:4px;
+    position: relative; 
+    bottom: 0;
+    right: 0;
+    }
+
+    /* ----  end: footer css */
+
+    /* begin: under construction css ---- */
+
+.underconstruction {font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    width:50%;
+    margin: 0 auto;
+padding-top:50px;}
+
+    /* end: under construction css */
+
+    /* begin: video page css */
+.videomain img {
+    opacity: 0.5;
+    transition: opacity .5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+    -webkit-transition: opacity .5s ease-out;
+    -o-transition: opacity .5s ease-out;
+    -webkit-backface-visibility: hidden;
+}
+
+.videomain img:hover {opacity: 1.0;}
+
+
+.videomain {
+    display:grid;
+    grid-template-columns:62% 50%;
+margin-left:30px;
+width:650px;}
+.videomain h2 {font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    }
+.videomain h3 {font-size:12px;}
+
+.videocolumnleft {
+    width:400;}
+.videocolumnright {
+    padding-left:30px;
+    width:300;}
+
+.videotextchunk1 {}
+.videotextchunk2 {margin-top:160px;}
+.videotextchunk3 {margin-top:370px;}
+
+    /* ----  end: video page css */
+
+    /* begin: art page css ---- */
+
+
+.artmain {
+    display:grid;
+    grid-template-columns:59% 50%;
+margin-left:30px;
+        margin-top:30px;
+width:650px;}
+.artmain h2 {font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    }
+.artmain h3 {font-size:12px;}
+
+.artcolumnleft {
+    width:400px;}
+.artcolumnright {
+    padding-left:30px;
+    width:300px;}
+
+.artcolumnleft img {width:375px;
+    padding-bottom:5px;}
+
+.arttextchunk1 {}
+.arttextchunk2 {margin-top:490px;}
+.arttextchunk3 {margin-top:220px;}
+.arttextchunk4 {margin-top:300px;}
+.arttextchunk5 {margin-top:600px;}
+
+    /* ---- end: art page css */
+
+    /* begin: design page css ----  */
+
+
+.designmain {
+    display:grid;
+    grid-template-columns:59% 50%;
+margin-left:30px;
+width:650px;
+margin-top:30px;}
+.designmain h2 {font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    }
+.designmain h3 {font-size:12px;}
+
+.designcolumnleft {
+    width:400;}
+.designcolumnright {
+    padding-left:30px;
+    width:300;}
+
+.designcolumnleft img {width:375px;
+    padding-bottom:5px;}
+
+.designtextchunk1 {}
+.designtextchunk2 {margin-top:275px;}
+.designtextchunk3 {margin-top:410px;}
+.designtextchunk4 
+.designtextchunk5 
+
+    /* ---- end: design page css */
+
+    /* begin: apparel page css ----  */
+
+
+.apparelmain {
+    display:grid;
+    grid-template-columns:59% 50%;
+margin-left:30px;
+width:650px;
+margin-top:30px;}
+.apparelmain h2 {font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    }
+.apparelmain h3 {font-size:12px;}
+
+.apparelcolumnleft {
+    width:400;}
+.apparelcolumnright {
+    padding-left:30px;
+    width:300;}
+
+
+.appareltextchunk1 {}
+.appareltextchunk2 {margin-top:380px;}
+.appareltextchunk3 
+.appareltextchunk4 
+.appareltextchunk5 
+
+
+    /* ----  end: apparel page css */
+
+
+
+</style>
+
+</head>
+<body>
+    
+<div class="main">
+    <div class="header">
+    <div class="title">K A T E &nbsp;&nbsp;   K I N K A D E</div>
+        
+        <div class="navbar"><ul>
+            <li><a href="http://katekinkade.com/">Home</a></li>
+            
+             <li><a href="https://drive.google.com/file/d/1ih_rF3JhjpspKroSI6xqjyiUmM1ZZjND/view?usp=sharing">Resume</a></li>
+            <li>
+            
+            <li>
+                <a href="javascript:showhide('contact')">
+    		Contact
+    	  </a></li>
+            
+                <li>
+                <a href="javascript:showhide('socials')">
+    		
+                    </a></li></ul>
+        
+        <div id="contact">
+    	
+                <a href="mailto:katekinkade@gmail.com">
+                    ⇢ &nbsp; Email me </a> 
+                <button id="copy-button">copy email</button>
+            <div class="hide">
+                <textarea id="copy-area">
+        katekinkade@gmail.com</textarea></div>
+    <p id="debug-text"></p>
+    <script src="./index.js"></script>
+            
+              <p><a href="https://www.linkedin.com/in/katekinkade/">
+               ⇢ &nbsp; LinkedIn</a><a 
+
+    	</div>
+        
+          <div id="socials">
+             <p><a href="http://www.instagram.com/katekinko">
+                Instagram</a><a href="https://uk.linkedin.com/in/katekinkade">Linkedin</a></p>
+              
+    	</div>
+        
+        </div></div>
+    
+    <!--end header-->
+    
+    <div class="boxcontainer">
+        
+    <div class="row1">
+        <div class="textbox1">
+           <p>Hi, friend!</p><p>
+                
+                I'm a communications grad from Richmond, the American International University in London.</p>
+            <p>I love the North Shore, airport terminals, and Bob Dylan's "Highway 61 Revisited."<p>
+            I'm a creative worker currently based in Minneapolis.</p>
+        </div>
+        
+       
+      <div class="face">
+    
+    
+        
+  <div class="imageBox">
+
+    <div class="imageInn">
+      <img src="https://i.imgur.com/qS3PLDt.png">
+    </div>
+
+    <div class="hoverImg center">
+    <img src="https://i.imgur.com/i60NDXK.png" >
+      </div></div></div>
+        
+            </div>
+        
+    <div class="row2">
+        
+        
+        <div class="design">
+            
+                    <div class="blogbox">
+    <div class="imageInn">
+     <a href="https://blog.katekinkade.com/"><img src="https://i.imgur.com/YRjju5t.jpg"></a>
+    </div>
+
+    <div class="hoverImg center1">
+          <a href="https://blog.katekinkade.com/"><img src="https://i.imgur.com/raWrkxJ.png" >
+  
+              </div></div></div>
+                        
+                        
+       
+        
+        
+        <div class="shirts">
+            
+             <div class="videobox">
+    <div class="imageInn">
+     <a href="http://katekinkade.com/video/"><img src="https://i.imgur.com/jQELnfr.jpg"></a>
+    </div>
+
+    <div class="hoverImg center1">
+          <a href="http://katekinkade.com/video/"><img src="https://i.imgur.com/aXLNxDy.png" ></a>
+  
+              
+        
+              </div>
+        
+        
+            </div></div></div>
+        
+        
+    <div class="row3">
+        <div class="art">
+            
+             <div class="artbox">
+    <div class="imageInn">
+     <a href="http://katekinkade.com/design"><img src="https://i.imgur.com/gR1gYA0.jpg"></a>
+    </div>
+
+    <div class="hoverImg center1">
+          <a href="http://katekinkade.com/design"><img src="https://i.imgur.com/FlA4OtY.png" >
+  
+              </div></div>
+                 
+         </div>
+        
+        
+        
+     
+        <div class="video"> 
+        <div class="resumebox">
+    <div class="imageInn">
+     <a href="https://drive.google.com/file/d/1ih_rF3JhjpspKroSI6xqjyiUmM1ZZjND/view?usp=sharing"><img src="https://i.imgur.com/r3DvcYs.png"></a>
+    </div>
+
+    <div class="hoverImg center1">
+          <a href="https://drive.google.com/file/d/1ih_rF3JhjpspKroSI6xqjyiUmM1ZZjND/view?usp=sharing"><img src="https://i.imgur.com/EZInJdn.png" >
+  
+              </div></div></div>
+
+        
+        <div class="photo">
+    <div class="imageBox1">
+    <div class="imageInn">
+     <a href="http://photo.katekinkade.com/"><img src="https://i.imgur.com/IuUv5YN.jpg"></a>
+    </div>
+
+    <div class="hoverImg center1">
+          <a href="http://photo.katekinkade.com/"><img src="https://i.imgur.com/F7CHcqY.png" >
+  
+      </div></div></div>
+              
+              </div>
+        
+        </div>
+        </div>
+    
+    
+    </div></div>
+    
+    <div class="footer">
+    <div class="copyright">coded by kate</div></div>
+
+         <!--is this copyright tacky? decide later-->
+      <!--show/hide navigation script-->
+    
+<script>     function showhide(id) {
+       	var e = document.getElementById(id);
+       	e.style.display = (e.style.display == 'block') ? 'none' : 'block';
+     }</script>
+    
+    
+    
+<script>const copyButton = document.querySelector("#copy-button");
+const copyArea = document.querySelector("#copy-area");
+const debugText = document.querySelector("#debug-text");
+let copiedText = "";
+
+copyButton.addEventListener("click", (e) => {
+    copyArea.select();
+
+    try {
+        copiedText = document.execCommand("copy");
+        debugText.textContent = "Copied!";
+    }catch(err) {
+        debugText.textContent = "The text was not able to be succesfully copied!";
+    }
+});</script>
+
+    
+     <!--show/hide navigation script-->
+
+</body>
+
+    
+</html>
+
+    
+
