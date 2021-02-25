@@ -7,7 +7,7 @@ body {background-color:#FAFAFA;}
 /* begin: header css ----  */
 
 .header {padding-top:20px;
-    padding-left:30px;
+    padding-left:80px;
     padding-bottom:20px;}
 
 .title {
@@ -55,6 +55,7 @@ body {background-color:#FAFAFA;}
 .boxcontainer  {
     width:580px;
     margin-left: 90px;
+    margin-top: 15px;
     -webkit-transform: rotate(0);}
 .boxcontainer img {height:186px;
     opacity: 0.5;
@@ -183,7 +184,7 @@ body {background-color:#FAFAFA;}
 
     /* begin: footer css ----  */
 
-.copyright  {font-family: 'Varela Round', sans-serif;
+.codeby  {font-family: 'Varela Round', sans-serif;
     font-size: 14px;
     float:right;
     border-style: solid;
@@ -193,13 +194,29 @@ body {background-color:#FAFAFA;}
     font-size: 10px;
     margin-bottom:40px;
    }
+.codeby a {text-decoration: none;
+    color: black;}
+.codeby a:hover {color:lightcoral;}
 
-.footer {padding-right:5px;
-        margin-top:4px;
+.footer {padding-right:33px;
+        margin-top:10px;
     position: relative; 
     bottom: 0;
     right: 0;
     }
+
+.indexart {
+  position: relative;
+  float: left;}
+.indexart .hoverImg img {width: 80px;
+    height: 40px;}
+.indexart .hoverImg {
+  position: absolute;
+  left: -70px;
+  top: 90px;
+  display: none;}
+.indexart:hover .hoverImg {
+  display: block;}
 
     /* ----  end: footer css */
     /* ----  end: index css */
@@ -280,4 +297,21 @@ margin-top:30px;}
 
     /* ---- end: art page css */
 
+
+   /* ---- code box*/
+.htmlbox {height:200px;
+           width:800px;
+            border:1px solid #ccc;
+            overflow:auto;}
+.htmlbox code { font:monospace;
+                font-size:3;
+             }
+
+.cssbox {height:200px;
+           width:800px;
+            border:1px solid #ccc;
+            overflow:auto;}
+.cssbox code { font:monospace;
+                font-size:3;
+             }
    
