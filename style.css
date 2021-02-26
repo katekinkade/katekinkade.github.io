@@ -202,6 +202,14 @@ h3 {font-size:12px;}
 .codeby a {text-decoration: none;
     color: black;}
 .codeby a:hover {color:lightcoral;}
+.arrow  img {
+    height:10px;
+    width: 30px;
+    float:right;
+    margin-right:5px;
+    margin-bottom:40px;
+     margin-top:4px;
+   }
 
 .footer {padding-right:33px;
         margin-top:10px;
@@ -299,19 +307,23 @@ margin-top:30px;}
 
 
    /* ---- code box*/
-.htmlbox {height:200px;
-           width:800px;
+.codebox {height:200px;
+            width:580px;
             border:1px solid #ccc;
-            overflow:auto;}
-.htmlbox code { font:monospace;
-                font-size:3;
-             }
+            overflow:auto;
+            margin-bottom: 30px;}
+.codebox code {font:monospace;
+                font-size:3; }
+.helloworld-font {
+    font-family: monospace;
+    color:limegreen;
+    font-size:13px;
+}
+secretmessage-font: {
+    color:black;
+}
+secretmessage-font: {
+    color:white;
+}
 
-.cssbox {height:200px;
-           width:800px;
-            border:1px solid #ccc;
-            overflow:auto;}
-.cssbox code { font:monospace;
-                font-size:3;
-             }
-.cssboxwrapper {margin-top: 50px}
+
