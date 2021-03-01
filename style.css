@@ -303,19 +303,19 @@ margin-top:30px;}
     width:375px;
     padding-bottom:5px;}
 
-.arttext1 {}
+.arttext1 {margin-top:20px;}
 .arttext1 img {opacity: 1.0;
     width:40px; height: 30px;}
-.arttext2 {margin-top:350px;}
+.arttext2 {margin-top:390px;}
 .arttext2 img {opacity: 1.0;
     width:40px; height: 30px;}
-.arttext3 {margin-top:290px;}
+.arttext3 {margin-top:220px;}
 .arttext3 img {opacity: 1.0;
     width:40px; height: 30px;}
-.arttext4 {margin-top:110px;}
+.arttext4 {margin-top:150px;}
 .arttext4 img {opacity: 1.0;
     width:40px; height: 30px;}
-.arttext5 {margin-top:550px;} 
+.arttext5 {margin-top:200px;} 
 .arttext5 img {opacity: 1.0;
     width:40px; height: 30px;}
 .arttext6 {margin-top:150px;} 
