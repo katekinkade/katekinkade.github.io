@@ -1,5 +1,4 @@
-body {background-color:#FAFAFA;}
-.main {
+body {background-color:#FAFAFA;
     font-family: 'Varela Round', sans-serif;
     font-size:11px;
     width:100%
@@ -59,10 +58,17 @@ h3 {font-size:12px;}
  /* begin: index css ---- */
 
 .boxcontainer  {
-    width:580px;
-    margin-left: 90px;
     margin-top: 15px;
+    margin-right: 20px;
+            max-width:580px;
     -webkit-transform: rotate(0);}
+@media (min-width:629px) 
+{.boxcontainer {margin-left: 90px;
+                    min-width:580px;}}
+@media (max-width:629px) 
+{.boxcontainer {margin-left: 50px;
+    margin-right:50px;}}
+
 .boxcontainer img {height:186px;
     opacity: 0.5;
     transition: opacity .5s ease-out;
@@ -76,9 +82,18 @@ h3 {font-size:12px;}
 /* index ROW 1 ---- */
 
 .row1  {
-    display:grid;
-    grid-template-columns:41% 38%; 
-     justify-content: end;}
+    display: grid;
+  grid-template-columns: repeat(3, 1fr);
+    grid-gap:6px;
+  grid-auto-rows: minmax(100px, auto);}
+@media (min-width:629px) 
+{.row1 {margin-left: 124px;}}
+@media (max-width: 629px) {
+  .row1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 30px;
+          padding-bottom:30px;}}
 
 .bio  {background-color:#ECECEC;
     width:230px;
@@ -87,10 +102,15 @@ h3 {font-size:12px;}
     padding-top: 10px;
     padding-bottom:20px;
     padding-left:25px;}
-
+@media (max-width: 629px) {
+  .bio {
+        width:100%;
+      height:100%;}}
 .face {
     position: relative;
-    float: left;}
+    float: left;
+    width:100%; height:100%;}
+@media (hover: hover) and (pointer: fine) {
 .face img {opacity:.7;
     width: 220px;
     height: 190px}
@@ -103,7 +123,65 @@ h3 {font-size:12px;}
     top: 30px;
     display: none;}
 .face:hover .hoverImg {
-    display: block;}
+    display: block;}}
+@media (max-width:629px) {
+  img#facecappy, #blogcappy, #videocappy, #artcappy, #resumecappy, #photocappy {
+    display: none;}}
+@media (min-width:629px) {
+  img#videocappy2, #blogcappy2, #resumecappy2, #photocappy2, #artcappy2 {
+      display: none; }}
+img#videocappy2 {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+    width: auto;
+  height: auto;
+  max-width: 70%;
+  max-height: 70%;
+    opacity: 1.0;
+    }
+img#blogcappy2 {
+      position: absolute;
+      top: 10px;
+    right: 10px;
+width: auto;
+  height: auto;
+  max-width: 70%;
+  max-height: 70%;
+    opacity: 1.0;
+    }
+img#artcappy2 {
+      position: absolute;
+      top: 10px;
+    right: 10px;
+width: auto;
+  height: auto;
+  max-width: 70%;
+  max-height: 70%;
+    opacity: 1.0;
+    }
+img#resumecappy2 {
+      position: absolute;
+      top: 10px;
+    left: 10px;
+width: auto;
+  height: auto;
+  max-width: 70%;
+  max-height: 70%;
+    opacity: 1.0;
+    }
+img#photocappy2 {
+      position: absolute;
+      bottom: 10px;
+    right: 10px;
+width: auto;
+  height: auto;
+  max-width: 70%;
+  max-height: 70%;
+    opacity: 1.0;
+    }
+
+
 
 /* index ROW 2 ---- */
 /* note: ".indexvideo" is used on the index page (not ".video") ---- */
@@ -111,9 +189,19 @@ h3 {font-size:12px;}
 .row2  {
      padding-top:5px;
      display:grid;
-    grid-template-columns:26% 20% 40%;
+    grid-template-columns:29% 17% 40%;
    }
 
+@media (max-width: 629px) {
+  .row2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;
+          padding-bottom:30px;}}
+@media (max-width: 629px) {
+    .blog img, .face img {height:100%; width:100%;}}
+@media (max-width: 629px) {
+    .indexart img, .resume img, .photojournal img, .indexvideo img {height:100%; width:100%;}}
 .blog {
     position: relative;
     float: left;}
@@ -130,6 +218,7 @@ h3 {font-size:12px;}
 .indexvideo {
     position: relative;
     float: left;}
+
 .indexvideo .hoverImg img {width: 110px;
     height: 35px;}
 .indexvideo .hoverImg {
@@ -147,7 +236,14 @@ h3 {font-size:12px;}
      padding-top:5px;
     display:grid;
     grid-template-columns:6.5% 20% 28.5% 20% 20%;}
-
+@media (max-width: 629px) {
+  .row3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 17px;
+      padding-bottom:20px;
+  }
+}
 .indexart {
   position: relative;
   float: left;}
