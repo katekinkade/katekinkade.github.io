@@ -9,7 +9,7 @@ body {background-color:#FAFAFA;
     .header {padding-top:20px;
         padding-bottom:20px;
         text-align: center}
-    .title {margin-left:-11px;}
+    .title {margin-left:-16px;}
     }
 
 @media (min-width: 629px) {
@@ -20,7 +20,6 @@ body {background-color:#FAFAFA;
 .title {
     font-family: 'Quicksand', sans-serif;
     font-size: 14px;
-      letter-spacing: .3px;
     }
 h1 {font-family: 'Quicksand', sans-serif;
     font-size: 14px;
@@ -38,7 +37,7 @@ h3 {font-size:12px;}
     margin: 0;
     padding: 0;}
 li:not(:first-child) {
-    margin-left:19px;
+    margin-left:16px;
 }
 .navbar li {
     display: inline;}
