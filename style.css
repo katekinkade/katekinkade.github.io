@@ -535,11 +535,11 @@ margin-bottom:30px;}
 }
 .codecontainer {
     max-width:580px;}
-@media (max-width: 629px) {
-  .codecontainer {
-   
-  }
-
+@media (min-width:629px) 
+{.codecontainer {margin-left: 90px;;}}
+@media (max-width:629px) 
+{.codecontainer {margin-left: 50px;
+    margin-right:50px;}}
 
    /* ---- carousel stuff*/
 
