@@ -90,7 +90,7 @@ li:not(:first-child) {
 
 .row1  {
     display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
     grid-gap:6px;
   grid-auto-rows: minmax(100px, auto);}
 @media (min-width:629px) 
@@ -103,32 +103,36 @@ li:not(:first-child) {
           padding-bottom:30px;}}
 
 .bio  {background-color:#ECECEC;
-    width:230px;
+    width:100%;
     height:100%;
     padding-right:25px;
     padding-top: 10px;
     padding-left:25px;}
-@media (max-width: 629px) {
-  .bio {
-        width:100%;
-      height:100%;}}
 .face {
     position: relative;
     float: left;
     width:100%; height:100%;}
 
-@media (hover: hover) and (pointer: fine) {
+@media (hover: hover) and (pointer: fine) 
 .face img {opacity:.7;}
 .face .hoverImg img 
     {width: 70px;
     height: 54px;}
 .face .hoverImg {
-    position: absolute;
+    position: fixed;
     right: 20px;
     top: 30px;
     display: none;}
 .face:hover .hoverImg {
     display: block;}}
+
+img#facecappytest {height:50px;
+margin-top:-300px;
+margin-left:130px;}
+
+@media (max-width:629px) {
+  img#facecappy{
+   visibility: hidden}}
 
 @media (max-width:629px) {
   img#facecappy, #blogcappy, #videocappy, #artcappy, #resumecappy, #photocappy {
