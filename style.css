@@ -104,10 +104,9 @@ li:not(:first-child) {
 
 .bio  {background-color:#ECECEC;
     width:230px;
-    height:190px;
+    height:100%;
     padding-right:25px;
     padding-top: 10px;
-    padding-bottom:20px;
     padding-left:25px;}
 @media (max-width: 629px) {
   .bio {
@@ -117,20 +116,20 @@ li:not(:first-child) {
     position: relative;
     float: left;
     width:100%; height:100%;}
+
 @media (hover: hover) and (pointer: fine) {
-.face img {opacity:.7;
-    width: 220px;
-    height: 190px}
+.face img {opacity:.7;}
 .face .hoverImg img 
     {width: 70px;
     height: 54px;}
 .face .hoverImg {
     position: absolute;
-    left: 113px;
+    right: 20px;
     top: 30px;
     display: none;}
 .face:hover .hoverImg {
     display: block;}}
+
 @media (max-width:629px) {
   img#facecappy, #blogcappy, #videocappy, #artcappy, #resumecappy, #photocappy {
     display: none;}}
