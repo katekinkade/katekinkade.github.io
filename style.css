@@ -8,9 +8,9 @@ body {background-color:#FAFAFA;
 @media (max-width: 629px) {
     .header {padding-top:20px;
         padding-bottom:20px;
-        padding-left:0px;
-        padding-right:0px;
-    text-align: center;}}
+        text-align: center}
+    .title {margin-left:-11px;}
+    }
 
 @media (min-width: 629px) {
 .header {padding-top:20px;
@@ -20,7 +20,7 @@ body {background-color:#FAFAFA;
 .title {
     font-family: 'Quicksand', sans-serif;
     font-size: 14px;
-    width: 100%;
+      letter-spacing: 5.6px;
     }
 h1 {font-family: 'Quicksand', sans-serif;
     font-size: 14px;
@@ -31,14 +31,15 @@ h3 {font-size:12px;}
 .navbar {padding-top:10px;
     font-size:11px;}
 .navbar a {text-decoration: none;
-        color:black;
-        margin-left:none;
-        margin-right:20px;}
+        color:black;}
 .navbar a:hover {color:lightcoral;}
 .navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;}
+li:not(:first-child) {
+    margin-left:19px;
+}
 .navbar li {
     display: inline;}
 
@@ -361,8 +362,8 @@ padding-top:50px;}
 {.videomain {margin-left: 90px;
     margin-right: 90px;}}
 @media (max-width:629px) 
-{.videomain {margin-left: 20px;
-    margin-right:20px;}}
+{.videomain {margin-left: 50px;
+    margin-right:50px;}}
 
 
 .videorow1  {
