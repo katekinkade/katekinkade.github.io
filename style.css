@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'rocking_horseregular';
+    src: url('rocking_horse-webfont.woff2') format('woff2'),
+         url('rocking_horse-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 
 body {background-color:#FAFAFA;
@@ -20,21 +28,24 @@ body {background-color:#FAFAFA;
     padding-bottom:20px;}}
 
 .title {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 14px;
+    font-family: 'rocking_horseregular';
+    font-size: 40px;
     }
 h1 {font-family: 'Quicksand', sans-serif;
     font-size: 14px;
     }
-h2 {font-size:14px; letter-spacing: 1.5px;}
+h2 {  font-family: 'rocking_horseregular';
+    font-size:24px; letter-spacing: 1px;
+  line-height: 10%;}
 h3 {font-size:12px;}
 
-.navbar {padding-top:10px;
+.navbar {padding-top:0px;
     font-size:11px;}
-.navbar a {text-decoration: none;
+a {text-decoration: none;
         color:black;}
-.navbar a:hover {color:lightcoral;}
-.navbar ul {
+a:hover {color:lightcoral;}
+.navbar ul {font-family: 'rocking_horseregular';
+    font-size:22px;
     list-style-type: none;
     margin: 0;
     padding: 0;}
@@ -67,8 +78,8 @@ li:not(:first-child) {
  /* begin: index css ---- */
 
 .hireme-font {
-    font-family: 'Homemade Apple', cursive;
-    font-size:13px;
+    font-family: 'rocking_horseregular';
+    font-size:23px;
 
 }
 
@@ -112,7 +123,9 @@ li:not(:first-child) {
 
 .bio  {background-color:#ECECEC;
     padding-right:25px;
-    padding-top: 10px;
+    padding-top: 0px;
+        padding-bottom: 5px;
+
     padding-left:25px;}
 .face {
     position: relative;
@@ -222,7 +235,7 @@ width: auto;
     position: relative;
     float: left;}
 .blog .hoverImg img {width: 100px;
-    height: 53px;}
+    height: 45px;}
 .blog .hoverImg {
     position: absolute;
     left: -90px;
@@ -239,7 +252,7 @@ width: auto;
     height: 35px;}
 .indexvideo .hoverImg {
   position: absolute;
-  left: 270px;
+  left: 280px;
   top: 105px;
   display: none;}
 .indexvideo:hover .hoverImg {
@@ -264,7 +277,7 @@ width: auto;
   position: relative;
   float: left;}
 .indexart .hoverImg img {width: 80px;
-    height: 40px;}
+    height: 30px;}
 .indexart .hoverImg {
   position: absolute;
   left: -70px;
@@ -291,7 +304,7 @@ width: auto;
     float: left;}
 .photojournal .hoverImg img 
     {width: 120px;
-    height: 60px;}
+    height: 50px;}
 .photojournal .hoverImg {
     position: absolute;
     left: 138px;
