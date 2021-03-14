@@ -17,19 +17,20 @@ body {background-color:#FAFAFA;
 /* begin: header css ----  */
 @media (max-width: 629px) {
     .header {padding-top:20px;
-        padding-bottom:20px;
+        padding-bottom:10px;
         text-align: center}
     .title {margin-left:-16px;}
     }
 
 @media (min-width: 629px) {
-.header {padding-top:20px;
+.header {padding-top:10px;
     padding-left:80px;
-    padding-bottom:20px;}}
+    padding-bottom:5px;}}
 
 .title {
     font-family: 'rocking_horseregular';
-    font-size: 40px;
+    font-size: 32px; 
+    letter-spacing: 3.5px;
     }
 h1 {font-family: 'Quicksand', sans-serif;
     font-size: 14px;
@@ -54,6 +55,8 @@ li:not(:first-child) {
 }
 .navbar li {
     display: inline;}
+
+.hoveryellow a:hover {color:gold;}
 
 #contact {display:none; 
         padding-top:15px;
